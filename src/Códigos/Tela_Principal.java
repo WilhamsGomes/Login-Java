@@ -27,18 +27,19 @@ public class Tela_Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        pnl_azul = new javax.swing.JPanel();
         lbl_icone = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         lbl_txtWilhams1 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        pnl_verde = new javax.swing.JPanel();
         lbl_title = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+        pnl_azul.setBackground(new java.awt.Color(0, 153, 153));
 
         lbl_icone.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ícones/Icon PNG.png"))); // NOI18N
 
@@ -53,32 +54,31 @@ public class Tela_Principal extends javax.swing.JFrame {
         lbl_txtWilhams1.setForeground(new java.awt.Color(255, 255, 255));
         lbl_txtWilhams1.setText("CRIADO BY WILHAMS GOMES");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(117, 117, 117)
-                .addComponent(lbl_icone)
+        javax.swing.GroupLayout pnl_azulLayout = new javax.swing.GroupLayout(pnl_azul);
+        pnl_azul.setLayout(pnl_azulLayout);
+        pnl_azulLayout.setHorizontalGroup(
+            pnl_azulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_azulLayout.createSequentialGroup()
+                .addGroup(pnl_azulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnl_azulLayout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addComponent(lbl_icone))
+                    .addGroup(pnl_azulLayout.createSequentialGroup()
+                        .addGap(80, 80, 80)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnl_azulLayout.createSequentialGroup()
+                        .addGap(128, 128, 128)
+                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(83, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(78, 78, 78))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(126, 126, 126))))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+            .addGroup(pnl_azulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_azulLayout.createSequentialGroup()
                     .addContainerGap(174, Short.MAX_VALUE)
                     .addComponent(lbl_txtWilhams1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(136, 136, 136)))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        pnl_azulLayout.setVerticalGroup(
+            pnl_azulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_azulLayout.createSequentialGroup()
                 .addGap(98, 98, 98)
                 .addComponent(lbl_icone, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
@@ -86,40 +86,50 @@ public class Tela_Principal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(104, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(pnl_azulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnl_azulLayout.createSequentialGroup()
                     .addGap(57, 57, 57)
                     .addComponent(lbl_txtWilhams1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(370, Short.MAX_VALUE)))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 490, 460));
+        getContentPane().add(pnl_azul, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 490, 460));
 
-        jPanel2.setBackground(new java.awt.Color(0, 51, 51));
+        pnl_verde.setBackground(new java.awt.Color(0, 51, 51));
 
         lbl_title.setBackground(new java.awt.Color(255, 255, 255));
         lbl_title.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         lbl_title.setForeground(new java.awt.Color(255, 255, 255));
         lbl_title.setText("INFORME SEUS DADOS");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(177, Short.MAX_VALUE)
-                .addComponent(lbl_title, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(133, 133, 133))
+        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField1.setBorder(null);
+
+        javax.swing.GroupLayout pnl_verdeLayout = new javax.swing.GroupLayout(pnl_verde);
+        pnl_verde.setLayout(pnl_verdeLayout);
+        pnl_verdeLayout.setHorizontalGroup(
+            pnl_verdeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_verdeLayout.createSequentialGroup()
+                .addContainerGap(121, Short.MAX_VALUE)
+                .addGroup(pnl_verdeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_verdeLayout.createSequentialGroup()
+                        .addComponent(lbl_title, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(133, 133, 133))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_verdeLayout.createSequentialGroup()
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(114, 114, 114))))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        pnl_verdeLayout.setVerticalGroup(
+            pnl_verdeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_verdeLayout.createSequentialGroup()
                 .addGap(58, 58, 58)
                 .addComponent(lbl_title, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(369, Short.MAX_VALUE))
+                .addGap(65, 65, 65)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(265, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 0, 490, 460));
+        getContentPane().add(pnl_verde, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 0, 490, 460));
 
         pack();
         setLocationRelativeTo(null);
@@ -161,12 +171,13 @@ public class Tela_Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lbl_icone;
     private javax.swing.JLabel lbl_title;
     private javax.swing.JLabel lbl_txtWilhams1;
+    private javax.swing.JPanel pnl_azul;
+    private javax.swing.JPanel pnl_verde;
     // End of variables declaration//GEN-END:variables
 }
