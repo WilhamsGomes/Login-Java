@@ -34,7 +34,20 @@ public class Tela_Principal extends javax.swing.JFrame {
         lbl_txtWilhams1 = new javax.swing.JLabel();
         pnl_verde = new javax.swing.JPanel();
         lbl_title = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        jSeparator3 = new javax.swing.JSeparator();
+        jSeparator4 = new javax.swing.JSeparator();
+        jSeparator5 = new javax.swing.JSeparator();
+        txt_senha = new javax.swing.JPasswordField();
+        lbl_senha = new javax.swing.JLabel();
+        lbl_name = new javax.swing.JLabel();
+        lbl_email2 = new javax.swing.JLabel();
+        txt_email = new javax.swing.JTextField();
+        txt_nome = new javax.swing.JTextField();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        lbl_membro = new javax.swing.JLabel();
+        jSeparator6 = new javax.swing.JSeparator();
+        jPanel2 = new javax.swing.JPanel();
+        lbl_entrar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -50,8 +63,9 @@ public class Tela_Principal extends javax.swing.JFrame {
         jSeparator2.setForeground(new java.awt.Color(255, 255, 255));
 
         lbl_txtWilhams1.setBackground(new java.awt.Color(255, 255, 255));
-        lbl_txtWilhams1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        lbl_txtWilhams1.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         lbl_txtWilhams1.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_txtWilhams1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_txtWilhams1.setText("CRIADO BY WILHAMS GOMES");
 
         javax.swing.GroupLayout pnl_azulLayout = new javax.swing.GroupLayout(pnl_azul);
@@ -59,81 +73,155 @@ public class Tela_Principal extends javax.swing.JFrame {
         pnl_azulLayout.setHorizontalGroup(
             pnl_azulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_azulLayout.createSequentialGroup()
-                .addGroup(pnl_azulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnl_azulLayout.createSequentialGroup()
-                        .addGap(117, 117, 117)
-                        .addComponent(lbl_icone))
-                    .addGroup(pnl_azulLayout.createSequentialGroup()
-                        .addGap(80, 80, 80)
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnl_azulLayout.createSequentialGroup()
-                        .addGap(128, 128, 128)
-                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(pnl_azulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_azulLayout.createSequentialGroup()
-                    .addContainerGap(174, Short.MAX_VALUE)
-                    .addComponent(lbl_txtWilhams1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(136, 136, 136)))
+                .addContainerGap(80, Short.MAX_VALUE)
+                .addGroup(pnl_azulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_txtWilhams1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lbl_icone))
+                .addGap(81, 81, 81))
         );
         pnl_azulLayout.setVerticalGroup(
             pnl_azulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_azulLayout.createSequentialGroup()
-                .addGap(98, 98, 98)
+                .addGap(59, 59, 59)
+                .addComponent(lbl_txtWilhams1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbl_icone, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 14, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(104, Short.MAX_VALUE))
-            .addGroup(pnl_azulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(pnl_azulLayout.createSequentialGroup()
-                    .addGap(57, 57, 57)
-                    .addComponent(lbl_txtWilhams1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(370, Short.MAX_VALUE)))
+                .addComponent(jSeparator2, javax.swing.GroupLayout.DEFAULT_SIZE, 14, Short.MAX_VALUE)
+                .addGap(104, 104, 104))
         );
 
         getContentPane().add(pnl_azul, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 490, 460));
 
         pnl_verde.setBackground(new java.awt.Color(0, 51, 51));
+        pnl_verde.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbl_title.setBackground(new java.awt.Color(255, 255, 255));
-        lbl_title.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        lbl_title.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl_title.setForeground(new java.awt.Color(255, 255, 255));
         lbl_title.setText("INFORME SEUS DADOS");
+        pnl_verde.add(lbl_title, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 180, 33));
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setBorder(null);
+        jSeparator3.setBackground(new java.awt.Color(255, 255, 255));
+        jSeparator3.setForeground(new java.awt.Color(255, 255, 255));
+        pnl_verde.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 430, 140, 14));
 
-        javax.swing.GroupLayout pnl_verdeLayout = new javax.swing.GroupLayout(pnl_verde);
-        pnl_verde.setLayout(pnl_verdeLayout);
-        pnl_verdeLayout.setHorizontalGroup(
-            pnl_verdeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_verdeLayout.createSequentialGroup()
-                .addContainerGap(121, Short.MAX_VALUE)
-                .addGroup(pnl_verdeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_verdeLayout.createSequentialGroup()
-                        .addComponent(lbl_title, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(133, 133, 133))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_verdeLayout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(114, 114, 114))))
+        jSeparator4.setBackground(new java.awt.Color(255, 255, 255));
+        jSeparator4.setForeground(new java.awt.Color(255, 255, 255));
+        pnl_verde.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 240, 291, 14));
+
+        jSeparator5.setBackground(new java.awt.Color(255, 255, 255));
+        jSeparator5.setForeground(new java.awt.Color(255, 255, 255));
+        pnl_verde.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 317, 291, 14));
+
+        txt_senha.setBackground(new java.awt.Color(0, 51, 51));
+        txt_senha.setForeground(new java.awt.Color(255, 255, 255));
+        txt_senha.setText("jPasswordField1");
+        txt_senha.setBorder(null);
+        pnl_verde.add(txt_senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 291, 31));
+
+        lbl_senha.setBackground(new java.awt.Color(255, 255, 255));
+        lbl_senha.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lbl_senha.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_senha.setText("PASSWORD");
+        pnl_verde.add(lbl_senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 180, 27));
+
+        lbl_name.setBackground(new java.awt.Color(255, 255, 255));
+        lbl_name.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lbl_name.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_name.setText("NAME");
+        pnl_verde.add(lbl_name, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 180, 27));
+
+        lbl_email2.setBackground(new java.awt.Color(255, 255, 255));
+        lbl_email2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lbl_email2.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_email2.setText("EMAIL");
+        pnl_verde.add(lbl_email2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, 180, 27));
+
+        txt_email.setBackground(new java.awt.Color(0, 51, 51));
+        txt_email.setForeground(new java.awt.Color(255, 255, 255));
+        txt_email.setText("Digite seu email");
+        txt_email.setBorder(null);
+        txt_email.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_emailActionPerformed(evt);
+            }
+        });
+        pnl_verde.add(txt_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 290, 30));
+
+        txt_nome.setBackground(new java.awt.Color(0, 51, 51));
+        txt_nome.setForeground(new java.awt.Color(255, 255, 255));
+        txt_nome.setText("Digite seu nome");
+        txt_nome.setBorder(null);
+        txt_nome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_nomeActionPerformed(evt);
+            }
+        });
+        pnl_verde.add(txt_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, 290, 30));
+
+        jCheckBox1.setBackground(new java.awt.Color(0, 51, 51));
+        jCheckBox1.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jCheckBox1.setForeground(new java.awt.Color(255, 255, 255));
+        jCheckBox1.setSelected(true);
+        jCheckBox1.setText("Aceitos os termos da plataforma");
+        jCheckBox1.setBorder(null);
+        pnl_verde.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, 240, -1));
+
+        lbl_membro.setBackground(new java.awt.Color(255, 255, 255));
+        lbl_membro.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lbl_membro.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_membro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_membro.setText("SEJA UM MEMBRO");
+        lbl_membro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        pnl_verde.add(lbl_membro, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, 140, 27));
+
+        jSeparator6.setBackground(new java.awt.Color(255, 255, 255));
+        jSeparator6.setForeground(new java.awt.Color(255, 255, 255));
+        pnl_verde.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 149, 291, 14));
+
+        jPanel2.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        lbl_entrar.setBackground(new java.awt.Color(255, 255, 255));
+        lbl_entrar.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        lbl_entrar.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_entrar.setText("ACESSAR");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(lbl_entrar, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(27, Short.MAX_VALUE))
         );
-        pnl_verdeLayout.setVerticalGroup(
-            pnl_verdeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_verdeLayout.createSequentialGroup()
-                .addGap(58, 58, 58)
-                .addComponent(lbl_title, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(65, 65, 65)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(265, Short.MAX_VALUE))
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lbl_entrar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
         );
+
+        pnl_verde.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 390, 150, 50));
 
         getContentPane().add(pnl_verde, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 0, 490, 460));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txt_nomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_nomeActionPerformed
+       
+        txt_nome.setText("");
+    }//GEN-LAST:event_txt_nomeActionPerformed
+
+    private void txt_emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_emailActionPerformed
+       txt_email.setText("");
+    }//GEN-LAST:event_txt_emailActionPerformed
 
     /**
      * @param args the command line arguments
@@ -171,13 +259,26 @@ public class Tela_Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JLabel lbl_email2;
+    private javax.swing.JLabel lbl_entrar;
     private javax.swing.JLabel lbl_icone;
+    private javax.swing.JLabel lbl_membro;
+    private javax.swing.JLabel lbl_name;
+    private javax.swing.JLabel lbl_senha;
     private javax.swing.JLabel lbl_title;
     private javax.swing.JLabel lbl_txtWilhams1;
     private javax.swing.JPanel pnl_azul;
     private javax.swing.JPanel pnl_verde;
+    private javax.swing.JTextField txt_email;
+    private javax.swing.JTextField txt_nome;
+    private javax.swing.JPasswordField txt_senha;
     // End of variables declaration//GEN-END:variables
 }
