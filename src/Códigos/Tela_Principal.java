@@ -1,19 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Códigos;
 
-/**
- *
- * @author Wilhams Gomes
- */
+
 public class Tela_Principal extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Tela_Principal
-     */
+   
     public Tela_Principal() {
         initComponents();
     }
@@ -32,6 +22,8 @@ public class Tela_Principal extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         lbl_txtWilhams1 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        lbl_entrar2 = new javax.swing.JLabel();
         pnl_verde = new javax.swing.JPanel();
         lbl_title = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
@@ -47,10 +39,10 @@ public class Tela_Principal extends javax.swing.JFrame {
         lbl_membro = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
         jPanel2 = new javax.swing.JPanel();
-        lbl_entrar = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        lbl_entrar1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pnl_azul.setBackground(new java.awt.Color(0, 153, 153));
 
@@ -68,17 +60,42 @@ public class Tela_Principal extends javax.swing.JFrame {
         lbl_txtWilhams1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_txtWilhams1.setText("CRIADO BY WILHAMS GOMES");
 
+        jPanel4.setBackground(new java.awt.Color(0, 51, 51));
+        jPanel4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel4MouseClicked(evt);
+            }
+        });
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lbl_entrar2.setBackground(new java.awt.Color(255, 255, 255));
+        lbl_entrar2.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        lbl_entrar2.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_entrar2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_entrar2.setText("JÁ TENHO UMA CONTA");
+        lbl_entrar2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel4.add(lbl_entrar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 182, 28));
+
         javax.swing.GroupLayout pnl_azulLayout = new javax.swing.GroupLayout(pnl_azul);
         pnl_azul.setLayout(pnl_azulLayout);
         pnl_azulLayout.setHorizontalGroup(
             pnl_azulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.CENTER, pnl_azulLayout.createSequentialGroup()
+                .addGap(116, 116, 116)
+                .addComponent(lbl_icone)
+                .addGap(118, 118, 118))
             .addGroup(pnl_azulLayout.createSequentialGroup()
-                .addContainerGap(80, Short.MAX_VALUE)
-                .addGroup(pnl_azulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_txtWilhams1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lbl_icone))
+                .addGroup(pnl_azulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnl_azulLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(pnl_azulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.CENTER, pnl_azulLayout.createSequentialGroup()
+                        .addGap(80, 80, 80)
+                        .addComponent(lbl_txtWilhams1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(81, 81, 81))
         );
         pnl_azulLayout.setVerticalGroup(
@@ -89,13 +106,13 @@ public class Tela_Principal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbl_icone, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 14, Short.MAX_VALUE)
+                .addComponent(jSeparator1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.DEFAULT_SIZE, 14, Short.MAX_VALUE)
-                .addGap(104, 104, 104))
+                .addComponent(jSeparator2)
+                .addGap(49, 49, 49)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20))
         );
-
-        getContentPane().add(pnl_azul, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 490, 460));
 
         pnl_verde.setBackground(new java.awt.Color(0, 51, 51));
         pnl_verde.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -187,33 +204,69 @@ public class Tela_Principal extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(0, 153, 153));
         jPanel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        lbl_entrar.setBackground(new java.awt.Color(255, 255, 255));
-        lbl_entrar.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        lbl_entrar.setForeground(new java.awt.Color(255, 255, 255));
-        lbl_entrar.setText("ACESSAR");
+        jPanel3.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        lbl_entrar1.setBackground(new java.awt.Color(255, 255, 255));
+        lbl_entrar1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        lbl_entrar1.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_entrar1.setText("ACESSAR");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(lbl_entrar1, javax.swing.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE)
+                .addGap(37, 37, 37))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lbl_entrar1, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(lbl_entrar, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_entrar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pnl_verde.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 390, 150, 50));
 
-        getContentPane().add(pnl_verde, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 0, 490, 460));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(pnl_azul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(pnl_verde, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(pnl_verde, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(pnl_azul, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    
     private void txt_nomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_nomeActionPerformed
        
         txt_nome.setText("");
@@ -223,6 +276,14 @@ public class Tela_Principal extends javax.swing.JFrame {
        txt_email.setText("");
     }//GEN-LAST:event_txt_emailActionPerformed
 
+    private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
+       
+        Tela_Login obj = new Tela_Login();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jPanel4MouseClicked
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -261,6 +322,8 @@ public class Tela_Principal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
@@ -268,7 +331,8 @@ public class Tela_Principal extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JLabel lbl_email2;
-    private javax.swing.JLabel lbl_entrar;
+    private javax.swing.JLabel lbl_entrar1;
+    private javax.swing.JLabel lbl_entrar2;
     private javax.swing.JLabel lbl_icone;
     private javax.swing.JLabel lbl_membro;
     private javax.swing.JLabel lbl_name;
