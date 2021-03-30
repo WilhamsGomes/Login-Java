@@ -95,6 +95,11 @@ public class Tela_Login extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(0, 153, 153));
         jPanel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel3MouseClicked(evt);
+            }
+        });
 
         lbl_entrar1.setBackground(new java.awt.Color(255, 255, 255));
         lbl_entrar1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
@@ -135,6 +140,16 @@ public class Tela_Login extends javax.swing.JFrame {
         dispose();
         
     }//GEN-LAST:event_lbl_membroMouseClicked
+
+    private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
+      
+        if (txt_email.getText().equals("@gmail") && (txt_senha.getText().equals("1234"))) {
+        
+          
+            System.out.println ("LOGIN CORRETO");
+           
+        } 
+    }//GEN-LAST:event_jPanel3MouseClicked
 
     /**
      * @param args the command line arguments
