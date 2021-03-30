@@ -1,2 +1,2 @@
-# Cadastramento-Java
- Criação de uma aplicação de cadastro das informações básicas dos usuários
+# Login-Java
+ Criação de uma aplicação de login com foco no design utilizando JavaFX
